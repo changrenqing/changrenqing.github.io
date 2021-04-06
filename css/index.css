@@ -1,0 +1,83 @@
+body {
+    background-color: rgb(222, 225, 230);
+    margin: 200px;
+}
+
+#link {
+    margin-top: 50px;
+}
+
+.link-item {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.word-basics {
+    width: 120px;
+    height: 120px;
+    font-family: "微软雅黑";
+    font-size: 100px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.word-basics-small {
+    width: 80px;
+    height: 80px;
+    font-family: "微软雅黑";
+    font-size: 60px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.word-white {
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    color: rgb(222, 225, 230);
+    transform-style: preserve-3d;
+    perspective: 500px;
+    -webkit-perspective: 500px;
+}
+
+.word {
+    position: absolute;
+    top: 0px;
+    left: -1px;
+    background-color: transparent;
+    color: rgb(222, 225, 230);
+    text-shadow:  -1px 0 1px rgb(222, 225, 230), 1px 0 1px rgba(0, 0, 0, 0.7);
+    transform-origin: 0 50%;
+    transform: rotateY(-40deg);
+    transition: 0.5s;
+    z-index: 2;
+    -webkit-transform-origin: left top;
+}
+
+.word-shadow {
+    position: absolute;
+    top: 0px;
+    left: -1px;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.2);
+    transform-origin: 0 50%;
+    z-index: 0.3;
+    transform: scale(1.1, 1) skew(0deg, 15deg);
+    transition: 0.3s;
+}
+
+.title-hover:hover .word {
+    transform: rotateY(-10deg);
+}
+
+.title-hover:hover .word-shadow {
+    transform: scale(1.1, 1) skew(0deg, 5deg);
+}
+
+.link-item:hover .word {
+    transform: rotateY(-10deg);
+}
+
+.link-item:hover .word-shadow {
+    transform: scale(1.1, 1) skew(0deg, 5deg);
+}
