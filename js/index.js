@@ -1,7 +1,7 @@
 !(function (window) {
 
     function createIndexShadowTextElement() {
-        var titleString = "长人青，2021";
+        var titleString = "长人青的个人博客";
         var elementString = "";
         for (var i = 0; i < titleString.length; i++) {
             var e = titleString[i];
@@ -25,10 +25,10 @@
             {
                 link: "./pages/blog.html",
                 linkName: ["博", "客"]
-            }, 
+            },
             {
-                link: "./pages/gallery.html",
-                linkName: ["摄", "影"]
+                link: "./pages/read.html",
+                linkName: ["阅", "读"]
             }, 
             {
                 link: "./pages/about.html",

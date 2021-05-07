@@ -81,3 +81,8 @@ body {
 .link-item:hover .word-shadow {
     transform: scale(1.1, 1) skew(0deg, 5deg);
 }
+
+.footer {
+   text-align: right;
+   color: rgba(0, 0, 0, 0.2);
+}
